@@ -1,0 +1,9 @@
+UnPlug 'vim-test'
+
+Plug 'scrooloose/nerdtree'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'mileszs/ack.vim'
+
+Plug 'thoughtbot/vim-rspec'
+Plug 'benmills/vimux'
+Plug 'vim-scripts/ZoomWin'

@@ -1,0 +1,35 @@
+let mapleader = ","
+
+"get out of insert mode
+inoremap jj <ESC>
+"shorthand for Ack search
+nnoremap <leader>f :Ag 
+
+"file viewing sidebar for navigation
+nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>ff :NERDTreeFind<CR>
+
+nnoremap <leader>git :Gstatus<CR>
+
+nnoremap <leader>z :ZoomWin<CR>
+
+nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <leader>h <C-w>s<C-w>j
+
+"searching for element on page will highlight matches
+set incsearch
+set showmatch
+set hlsearch
+"clears match results
+nnoremap <leader><space> :noh<cr>
+
+"used by vimux to send rspec commands to tmux pane
+let g:rspec_command = 'call VimuxRunCommand("bundle exec rspec {spec}\n")'
+
+set cursorline
+hi CursorLine term=bold guibg=#222222 guibg=Grey40
+
+nnoremap <silent> <Leader>t :call RunCurrentSpecFile()<CR>
+nnoremap <silent> <Leader>s :call RunNearestSpec()<CR>
+nnoremap <silent> <Leader>l :call RunLastSpec()<CR>
+nnoremap <silent> <Leader>a :call RunAllSpecs()<CR>

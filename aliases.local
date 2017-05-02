@@ -1,0 +1,9 @@
+# Bundler
+alias bb="bundle exec"
+
+#Jekyll
+alias js="jekyll serve"
+
+# Rails
+alias rs="bundle install && rails server -p 3000"
+

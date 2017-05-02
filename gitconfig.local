@@ -1,0 +1,10 @@
+[alias]
+  l = log --pretty=colored
+  sla = log --oneline --decorate --graph --all
+  unstage = reset HEAD --
+  uncommit = reset --soft HEAD^
+[pretty]
+  colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
+[user]
+  name = Manuel Garcia
+  email = iedidiah@gmail.com
